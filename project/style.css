@@ -1,0 +1,59 @@
+h1 {
+    color: #C71585;
+    font: bold 2em "Monospace", monaco;
+    background: white;
+
+}
+
+h3 {
+    color: #C71585;
+    font: italic bold 2em "Open Sans", sans-serif;
+}
+
+body {
+   background-color: #ff9966;
+   }
+
+p {
+    color: #CD104D;
+    }
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phrase{
+    font-size: 100px;}
+.phrase:hover{
+    color: #E14D2A;}
+
+.forecast{
+    font-size:60px;}
+
+h2 {
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+}
+
+.profile {
+    border-radius: 100%;}
+
+td {
+    color: #FFD1D1;
+    }
+
+ul {
+    color: #fbcce7;
+        font: italic 2em "Open Sans", sans-serif;
+}
+
+p {
+    color: black
+}
+
+label {
+ color: #d10056;
+ font: italic 1em "Monospace", monaco;
+}
