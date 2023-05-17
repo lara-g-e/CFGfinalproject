@@ -17,9 +17,19 @@ def search():
     return render_template('search.html')
 
 # account login route
+@app.route('/savedplaylists', methods=["POST", "GET"])
+def playlists():
+    name = request.form["username"]
+    return render_template("savedplaylists.html", username=name)
 
 # search results route
-
+@app.route('/results', methods=["POST", "GET"])
+def results():
+    year_of_release = request.form["decade"]
+    bechdel_test_score = request.form["bechdel"]
+    director_gender = request.form["director"]
+    return render_template('results.html', year=year_of_release, score=bechdel_test_score,
+                           director_value=director_gender)
 if __name__ == "__main__":
     app.run(debug=True)
 
