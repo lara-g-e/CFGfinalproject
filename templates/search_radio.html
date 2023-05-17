@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Feminist Films</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+<body>
+	<h3 align="center"> Filter by </h3>
+	<form action= "/results" method="post">
+		<div class="field">
+          <form>
+            <input type="radio" id="decade1" name="decade" value="1970-1980" />
+            <label for="decade1">1970s</label>
+
+            <input type="radio" id="decade2" name="decade" value="1980-1990" />
+            <label for="decade2">1980s</label>
+
+            <input type="radio" id="decade3" name="decade" value="1990-2000" />
+            <label for="decade3">1990s</label>
+
+            <input type="radio" id="decade4" name="decade" value="2000-2010" />
+            <label for="decade4">2000s</label>
+
+            <input type="radio" id="decade5" name="decade" value="2010-2020" />
+            <label for="decade4">2010s</label>
+              <input type="radio" id="decade6" name="decade" value="2020-2024" />
+            <label for="decade4">2020s</label>
+        </div>
+        <br>
+	 <div class="field">
+          <input type="radio" id="bechdel0" name="bechdel" value="0" />
+          <label for="bechdel0">0</label>
+
+          <input type="radio" id="bechdel1" name="bechdel" value="1" />
+          <label for="bechdel1">1</label>
+
+          <input type="radio" id="bechdel2" name="bechdel" value="2" />
+          <label for="bechdel2">2</label>
+
+          <input type="radio" id="bechdel3" name="bechdel" value="3" />
+          <label for="bechdel3">3</label>
+	  </div>
+        <br>
+	 <div class="field">
+          <input type="radio" id="director1" name="director" value="women" />
+          <label for="director1">women</label>
+
+          <input type="radio" id="director2" name="director" value="men" />
+          <label for="director2">men</label>
+
+        <input type="radio" id="director3" name="director" value="men and women" />
+          <label for="director3">men and women</label>
+	  </div>
+
+        <br>
+        <ul class="actions special">
+            <li><input type="submit" name="submit" id="submit" value="submit"/></li>
+        </ul>
+	</form>
+
+</body>
