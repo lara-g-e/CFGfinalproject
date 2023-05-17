@@ -25,11 +25,12 @@ def playlists():
 # search results route
 @app.route('/results', methods=["POST", "GET"])
 def results():
-    year_of_release = request.form["decade"]
+    start_year = int(request.form["decade"])
+    end_year = int(start_year) + 10
     bechdel_test_score = request.form["bechdel"]
-    director_gender = request.form["director"]
-    return render_template('results.html', year=year_of_release, score=bechdel_test_score,
-                           director_value=director_gender)
+    main_character_value = request.form["Main Character"]
+    return render_template('results.html', year=f"{start_year}-{end_year}", score=bechdel_test_score,
+                           main_character_value=main_character_value)
 if __name__ == "__main__":
     app.run(debug=True)
 
