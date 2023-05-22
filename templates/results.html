@@ -13,11 +13,10 @@
 		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
 	</head>
 <body>
-	<h1 align="center"> Your Results </h1>
-	<ul>
-		<li>The movies you've chosen are from {{year}}</li>
-		<li>The bechdel test score for these movies is {{score}}</li>
-		<li>These movies are directed by {{director_value}}</li>
-	</ul>
+	<body>
+    <h1 align="center">Your Results</h1>
+    {% for result in results %}
+    <p align="center">{{ result }}</p>
+    {% endfor %}
 </body>
-
+</body>
