@@ -15,8 +15,15 @@
 <body>
 	<body>
     <h1 align="center">Your Results</h1>
-    {% for result in results %}
-    <p align="center">{{ result }}</p>
-    {% endfor %}
+	<ul class="actions special">
+		<li><a href="{{ url_for('login') }}"  class="button"> Save Playlist</a></li>
+	</ul>
+	<form action="/savedplaylists" method="get">
+    	{% for result in results %}
+    	<p align="center">{{ result }}</p>
+    	{% endfor %}
+	</form>
 </body>
 </body>
+
+
