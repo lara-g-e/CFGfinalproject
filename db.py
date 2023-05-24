@@ -31,7 +31,9 @@ def _connect_to_db(films):
 
 
 # create a function to connect to the API to search for images and cast
-
+# create a function to connect to the API to search for cast and highlight gender of actors
+# initally this was called in the get_records_by_year_and_bech_rating() function using the film_title, but
+# due to difficulties in results showing on the website in a timely manner, we opted to exclude this
 
 def search_movies_database(film_title):
 
