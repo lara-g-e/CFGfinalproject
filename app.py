@@ -37,10 +37,12 @@ def results():
     results = get_records_by_year_and_bech_rating(start_year, end_year, bechdel_rating)
     return render_template('results.html', results=results)
 
-# about page route
-@app.route('/about')
-def about():
-    pass
+# register page route
+@app.route('/login')
+def login():
+    username = request.form.get('username')
+    password = request.form.get('password')
+    return render_template('login.html')
 
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
@@ -49,4 +51,5 @@ if __name__ == "__main__":
 # FLASK_APP=app.py
 # export FLASK_DEBUG=1
 # flask run
+
 
