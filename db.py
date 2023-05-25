@@ -1,7 +1,6 @@
 import requests
 import mysql.connector
 import nltk
-import numpy
 from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
 from nltk.chunk import ne_chunk
